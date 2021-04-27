@@ -1,0 +1,27 @@
+(0: declaration, int arr[])
+[]
+[]
+(2: assignment, int s = 0)
+[(1: declaration, int s = 0)]
+[]
+(1: declaration, int s = 0)
+[]
+[]
+(4: assignment, int i = 0)
+[(3: declaration, int i = 0)]
+[]
+(3: declaration, int i = 0)
+[]
+[]
+(5: control, i < arr.length)
+[(4: assignment, int i = 0), (0: declaration, int arr[])]
+[(5: control, i < arr.length)]
+(6: increment, i++)
+[(4: assignment, int i = 0), (6: increment, i++)]
+[(5: control, i < arr.length)]
+(7: increment, s += arr[i])
+[(2: assignment, int s = 0), (7: increment, s += arr[i])]
+[(5: control, i < arr.length)]
+(8: return, return s)
+[(7: increment, s += arr[i])]
+[]

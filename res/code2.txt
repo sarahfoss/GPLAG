@@ -1,0 +1,10 @@
+int sum(int array[], int len)
+{
+  int i = 0;
+  int sum = 0;
+  while(i < len){
+    sum = add(sum, array[i]);
+    i++;
+  }
+return sum;
+}

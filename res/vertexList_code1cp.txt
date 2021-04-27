@@ -1,0 +1,33 @@
+(0: declaration, int arr[])
+[]
+[]
+(1: declaration, int c)
+[]
+[]
+(2: declaration, int x)
+[]
+[]
+(3: declaration, s)
+[]
+[]
+(4: assignment, s = 0)
+[(3: declaration, s)]
+[]
+(5: assignment, x = 0)
+[(2: declaration, int x)]
+[]
+(6: control, x < c)
+[(5: assignment, x = 0), (1: declaration, int c)]
+[(6: control, x < c)]
+(7: increment, x++)
+[(5: assignment, x = 0), (7: increment, x++)]
+[(6: control, x < c)]
+(8: call-site, add(s, arr[x]))
+[(6: control, x < c)]
+[(6: control, x < c)]
+(9: assignment, s =)
+[(4: assignment, s = 0)]
+[(6: control, x < c)]
+(10: return, return s)
+[(9: assignment, s =)]
+[]

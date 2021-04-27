@@ -1,0 +1,48 @@
+(0: declaration, int arr[])
+[]
+[]
+(2: assignment, int target = 12)
+[(1: declaration, int target = 12)]
+[]
+(1: declaration, int target = 12)
+[]
+[]
+(4: assignment, int max = 0)
+[(3: declaration, int max = 0)]
+[]
+(3: declaration, int max = 0)
+[]
+[]
+(5: declaration, int i)
+[]
+[]
+(6: assignment, i = 0)
+[(5: declaration, int i)]
+[]
+(7: control, i < arr.length)
+[(6: assignment, i = 0), (0: declaration, int arr[])]
+[(7: control, i < arr.length)]
+(8: increment, i++)
+[(6: assignment, i = 0), (8: increment, i++)]
+[(7: control, i < arr.length)]
+(9: control, arr[i] == target)
+[(0: declaration, int arr[]), (2: assignment, int target = 12)]
+[(7: control, i < arr.length), (9: control, arr[i] == target)]
+(10: return, return 1)
+[]
+[(7: control, i < arr.length), (9: control, arr[i] == target)]
+(11: control, arr[i] > max)
+[(0: declaration, int arr[]), (4: assignment, int max = 0)]
+[(7: control, i < arr.length), (11: control, arr[i] > max)]
+(12: assignment, max = arr[i])
+[(4: assignment, int max = 0)]
+[(7: control, i < arr.length), (11: control, arr[i] > max)]
+(13: control, max != 0)
+[(12: assignment, max = arr[i])]
+[]
+(14: return, return 0)
+[]
+[(13: control, max != 0)]
+(15: return, return 1)
+[]
+[]

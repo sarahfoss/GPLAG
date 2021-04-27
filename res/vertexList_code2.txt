@@ -1,0 +1,33 @@
+(0: declaration, int array[])
+[]
+[]
+(1: declaration, int len)
+[]
+[]
+(3: assignment, int i = 0)
+[(2: declaration, int i = 0)]
+[]
+(2: declaration, int i = 0)
+[]
+[]
+(5: assignment, int sum = 0)
+[(4: declaration, int sum = 0)]
+[]
+(4: declaration, int sum = 0)
+[]
+[]
+(6: control, i < len)
+[(3: assignment, int i = 0), (1: declaration, int len)]
+[]
+(7: call-site, add(sum, array[i]))
+[(6: control, i < len)]
+[(6: control, i < len)]
+(8: assignment, sum =)
+[(5: assignment, int sum = 0)]
+[(6: control, i < len)]
+(9: increment, i++;)
+[(3: assignment, int i = 0), (9: increment, i++;)]
+[(6: control, i < len)]
+(10: return, return sum)
+[(8: assignment, sum =)]
+[]

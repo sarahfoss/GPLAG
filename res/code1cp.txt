@@ -1,0 +1,9 @@
+int sum(int arr[], int c)
+{
+  int x, s;
+  s = 0;
+  for(x = 0; x < c; x++){
+    s = add(s, arr[x]);
+  }
+return s;
+}
